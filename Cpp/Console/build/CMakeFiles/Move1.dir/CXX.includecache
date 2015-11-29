@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/daise/Codes/Console/consoledef.cpp
+consoledef.h
+C:/Users/daise/Codes/Console/consoledef.h
+
+C:/Users/daise/Codes/Console/consoledef.h
+iostream
+-
+windows.h
+-
+cstdlib
+-
+
+C:/Users/daise/Codes/Console/move.cpp
+consoledef.h
+C:/Users/daise/Codes/Console/consoledef.h
+
