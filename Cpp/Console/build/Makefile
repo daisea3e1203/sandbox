@@ -48,10 +48,10 @@ RM = "C:/Program Files (x86)/CMake/bin/cmake.exe" -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:/Users/daise/Codes/Console
+CMAKE_SOURCE_DIR = C:/Users/daise/GitProjects/SandBox/Cpp/Console
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:/Users/daise/Codes/Console/build
+CMAKE_BINARY_DIR = C:/Users/daise/GitProjects/SandBox/Cpp/Console/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/daise/Codes/Console/build/CMakeFiles C:/Users/daise/Codes/Console/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/daise/GitProjects/SandBox/Cpp/Console/build/CMakeFiles C:/Users/daise/GitProjects/SandBox/Cpp/Console/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/daise/Codes/Console/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/daise/GitProjects/SandBox/Cpp/Console/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Move1
+# Target rules for targets named Move2
 
 # Build rule for target.
-Move1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Move1
-.PHONY : Move1
+Move2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Move2
+.PHONY : Move2
 
 # fast build rule for target.
-Move1/fast:
-	$(MAKE) -f CMakeFiles/Move1.dir/build.make CMakeFiles/Move1.dir/build
-.PHONY : Move1/fast
+Move2/fast:
+	$(MAKE) -f CMakeFiles/Move2.dir/build.make CMakeFiles/Move2.dir/build
+.PHONY : Move2/fast
+
+char.obj: char.cpp.obj
+
+.PHONY : char.obj
+
+# target to build an object file
+char.cpp.obj:
+	$(MAKE) -f CMakeFiles/Move2.dir/build.make CMakeFiles/Move2.dir/char.cpp.obj
+.PHONY : char.cpp.obj
+
+char.i: char.cpp.i
+
+.PHONY : char.i
+
+# target to preprocess a source file
+char.cpp.i:
+	$(MAKE) -f CMakeFiles/Move2.dir/build.make CMakeFiles/Move2.dir/char.cpp.i
+.PHONY : char.cpp.i
+
+char.s: char.cpp.s
+
+.PHONY : char.s
+
+# target to generate assembly for a file
+char.cpp.s:
+	$(MAKE) -f CMakeFiles/Move2.dir/build.make CMakeFiles/Move2.dir/char.cpp.s
+.PHONY : char.cpp.s
 
 consoledef.obj: consoledef.cpp.obj
 
@@ -129,7 +156,7 @@ consoledef.obj: consoledef.cpp.obj
 
 # target to build an object file
 consoledef.cpp.obj:
-	$(MAKE) -f CMakeFiles/Move1.dir/build.make CMakeFiles/Move1.dir/consoledef.cpp.obj
+	$(MAKE) -f CMakeFiles/Move2.dir/build.make CMakeFiles/Move2.dir/consoledef.cpp.obj
 .PHONY : consoledef.cpp.obj
 
 consoledef.i: consoledef.cpp.i
@@ -138,7 +165,7 @@ consoledef.i: consoledef.cpp.i
 
 # target to preprocess a source file
 consoledef.cpp.i:
-	$(MAKE) -f CMakeFiles/Move1.dir/build.make CMakeFiles/Move1.dir/consoledef.cpp.i
+	$(MAKE) -f CMakeFiles/Move2.dir/build.make CMakeFiles/Move2.dir/consoledef.cpp.i
 .PHONY : consoledef.cpp.i
 
 consoledef.s: consoledef.cpp.s
@@ -147,8 +174,35 @@ consoledef.s: consoledef.cpp.s
 
 # target to generate assembly for a file
 consoledef.cpp.s:
-	$(MAKE) -f CMakeFiles/Move1.dir/build.make CMakeFiles/Move1.dir/consoledef.cpp.s
+	$(MAKE) -f CMakeFiles/Move2.dir/build.make CMakeFiles/Move2.dir/consoledef.cpp.s
 .PHONY : consoledef.cpp.s
+
+keyInput.obj: keyInput.cpp.obj
+
+.PHONY : keyInput.obj
+
+# target to build an object file
+keyInput.cpp.obj:
+	$(MAKE) -f CMakeFiles/Move2.dir/build.make CMakeFiles/Move2.dir/keyInput.cpp.obj
+.PHONY : keyInput.cpp.obj
+
+keyInput.i: keyInput.cpp.i
+
+.PHONY : keyInput.i
+
+# target to preprocess a source file
+keyInput.cpp.i:
+	$(MAKE) -f CMakeFiles/Move2.dir/build.make CMakeFiles/Move2.dir/keyInput.cpp.i
+.PHONY : keyInput.cpp.i
+
+keyInput.s: keyInput.cpp.s
+
+.PHONY : keyInput.s
+
+# target to generate assembly for a file
+keyInput.cpp.s:
+	$(MAKE) -f CMakeFiles/Move2.dir/build.make CMakeFiles/Move2.dir/keyInput.cpp.s
+.PHONY : keyInput.cpp.s
 
 move.obj: move.cpp.obj
 
@@ -156,7 +210,7 @@ move.obj: move.cpp.obj
 
 # target to build an object file
 move.cpp.obj:
-	$(MAKE) -f CMakeFiles/Move1.dir/build.make CMakeFiles/Move1.dir/move.cpp.obj
+	$(MAKE) -f CMakeFiles/Move2.dir/build.make CMakeFiles/Move2.dir/move.cpp.obj
 .PHONY : move.cpp.obj
 
 move.i: move.cpp.i
@@ -165,7 +219,7 @@ move.i: move.cpp.i
 
 # target to preprocess a source file
 move.cpp.i:
-	$(MAKE) -f CMakeFiles/Move1.dir/build.make CMakeFiles/Move1.dir/move.cpp.i
+	$(MAKE) -f CMakeFiles/Move2.dir/build.make CMakeFiles/Move2.dir/move.cpp.i
 .PHONY : move.cpp.i
 
 move.s: move.cpp.s
@@ -174,7 +228,7 @@ move.s: move.cpp.s
 
 # target to generate assembly for a file
 move.cpp.s:
-	$(MAKE) -f CMakeFiles/Move1.dir/build.make CMakeFiles/Move1.dir/move.cpp.s
+	$(MAKE) -f CMakeFiles/Move2.dir/build.make CMakeFiles/Move2.dir/move.cpp.s
 .PHONY : move.cpp.s
 
 # Help Target
@@ -185,10 +239,16 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Move1"
+	@echo "... Move2"
+	@echo "... char.obj"
+	@echo "... char.i"
+	@echo "... char.s"
 	@echo "... consoledef.obj"
 	@echo "... consoledef.i"
 	@echo "... consoledef.s"
+	@echo "... keyInput.obj"
+	@echo "... keyInput.i"
+	@echo "... keyInput.s"
 	@echo "... move.obj"
 	@echo "... move.i"
 	@echo "... move.s"

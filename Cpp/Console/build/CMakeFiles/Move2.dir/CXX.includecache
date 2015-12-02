@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/daise/GitProjects/SandBox/Cpp/Console/char.cpp
+consoledef.h
+C:/Users/daise/GitProjects/SandBox/Cpp/Console/consoledef.h
+
+C:/Users/daise/GitProjects/SandBox/Cpp/Console/consoledef.cpp
+consoledef.h
+C:/Users/daise/GitProjects/SandBox/Cpp/Console/consoledef.h
+
+C:/Users/daise/GitProjects/SandBox/Cpp/Console/consoledef.h
+iostream
+-
+windows.h
+-
+cstdlib
+-
+
+C:/Users/daise/GitProjects/SandBox/Cpp/Console/keyInput.cpp
+consoledef.h
+C:/Users/daise/GitProjects/SandBox/Cpp/Console/consoledef.h
+
+C:/Users/daise/GitProjects/SandBox/Cpp/Console/move.cpp
+consoledef.h
+C:/Users/daise/GitProjects/SandBox/Cpp/Console/consoledef.h
+

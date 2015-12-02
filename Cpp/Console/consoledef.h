@@ -23,3 +23,33 @@ using namespace std;
 void setColor (int col);
 void setColor (int fg,int bg);
 void setPos (int x, int y);
+
+/*************************
+ * Class and its methods *
+ *************************/
+//---------------------------------------------------------------
+
+class KeyInput
+{
+private:
+  //int KeyTbl[256];
+  int KeyState[256];
+
+public:
+  KeyInput();
+  int UpdateKey();
+  int GetState (int key);
+};
+
+class Char
+{
+private:
+  int x;
+  int y;
+  char c;
+  int color;
+public:
+  Char(int ix, int iy, char ic, int color);
+  void move (int mx, int my);
+  void draw();
+};

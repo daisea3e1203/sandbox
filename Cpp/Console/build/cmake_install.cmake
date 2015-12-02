@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/daise/Codes/Console
+# Install script for directory: C:/Users/daise/GitProjects/SandBox/Cpp/Console
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -35,5 +35,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/daise/Codes/Console/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/daise/GitProjects/SandBox/Cpp/Console/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
