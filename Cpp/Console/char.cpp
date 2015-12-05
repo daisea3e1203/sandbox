@@ -1,11 +1,12 @@
 #include "consoledef.h"
 
 
-Char::Char (int ix, int iy, char ic, int icolor) {
+Char::Char (int ix, int iy, char ic) {
   x = ix;
   y = iy;
+  _x = ix;
+  _y = iy;
   c = ic;
-  color = icolor;
 }
 
 void Char::move (int mx, int my) {
@@ -18,7 +19,10 @@ void Char::move (int mx, int my) {
 }
 
 void Char::draw() {
+  setPos(_x,_y);
+  cout << " ";
   setPos(x,y);
-  setColor(color);
   cout << c;
+  _x = x;
+  _y = y;
 }

@@ -9,7 +9,7 @@
 int main() {
   KeyInput Key;
   system("cls");
-  Char c(45,12,'@',COL_BLUE);
+  Char c(45,12,'@');
   //bool run = true;
   while(1) {
     Key.UpdateKey();
@@ -29,7 +29,7 @@ int main() {
     if (Key.GetState('Q') >= 3) break;
     Sleep(100);
   }
-  setColor(COL_WHITE);
+  //setColor(COL_WHITE);
   system("cls");
   return 0;
 }

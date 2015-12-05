@@ -46,10 +46,12 @@ class Char
 private:
   int x;
   int y;
+  int _x;
+  int _y;
   char c;
-  int color;
+  //int color;
 public:
-  Char(int ix, int iy, char ic, int color);
+  Char(int ix, int iy, char ic);
   void move (int mx, int my);
   void draw();
 };
